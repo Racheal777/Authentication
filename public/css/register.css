@@ -120,6 +120,23 @@ textarea {
   }
 
 
+  #email-el{
+      color: tomato;
+      padding: 5px 0px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 20px;
+      
+  }
+
+  #password-el{
+      color: tomato;
+      padding: 5px 0px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 20px;
+  }
+
 @media screen and (max-width : 600px) {
     
     

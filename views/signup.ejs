@@ -20,14 +20,16 @@
                     <br>
                     
                     <form id="form-input">
-                        <label>FirstName</label>
-                        <input type="text" placeholder="Name" name="fullName">
+                        <label>FullName</label>
+                        <input type="text" placeholder="Name" name="fullName" required>
 
                         <label>Email</label>
-                        <input type="email" placeholder="Email" name="email">
+                        <input type="email" placeholder="Email" name="email" required>
+                        <div id="email-el"></div>
 
                         <label>Password</label>
-                        <input type="password" placeholder="Password" name="password">
+                        <input type="password" placeholder="Password" name="password" required>
+                        <div id="password-el"></div>
 
                         <label>Confirm Password</label>
 
@@ -49,6 +51,6 @@
             </section>
 
 </header>
-<!-- <script src="../login.js"></script> -->
+<script src="../js/signup.js"></script>
 </body>
 </html>

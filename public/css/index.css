@@ -34,14 +34,31 @@ nav ul li a{
     margin: 1em 0px;
 }
 
-nav button{
+ button{
     padding: 5px 10px;
     border: none;
+    margin: 1em ;
     border-radius: 7px;
     background-color: rgba(68, 49, 45, 0.753);
 }
 
-nav button a{
+ button a{
     text-decoration: none;
     color: white;
+}
+
+div h1{
+    text-align: center;
+    color: rgb(162, 21, 228);
+    font-size: 3.5em;
+    margin: 4em auto 0px;
+}
+
+.btn button{
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(9, 61, 44);
+    color: azure;
+    font-size: 1.2em;
+    margin: 1em 23em;
 }

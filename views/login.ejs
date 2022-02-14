@@ -14,24 +14,26 @@
         
         <div id="login-container">
             <h2>Login</h2>
-            <form id="form-input">
-                <label>
-                    Email
-                </label>
-                <input type="text" placeholder="****@gmail.com" name="email" required>
 
-                <label>
-                    Password
-                </label>
-                <input type="password" placeholder="Password" name="password" required>
+            <form>
+
                 
-                <label>
-                    Forgot password ?
-                </label>
-                <input type="email" placeholder="Enter email" name="email">
+                <label>Email</label>
+                <input type="email" placeholder="Email" name="email"  required>
+                <div id="email-el"></div>
+
+                <label>Password</label>
+                <input type="password" placeholder="Password" name="password" required>
+                <div id="password-el"></div>
+
+                
 
 
                 <button type="submit">LogIn </button>
+                <br>
+
+                
+
                 <p class="texts">Don't have an account? <a href="/register">Register</a> </p>
 
                 
@@ -39,6 +41,25 @@
     
             </form>
         </div>
+
+        <!-- <form>
+            <div id="form-field">
+              <label for="email">Email</label>
+              <input type="text" name="email" />
+              <div class="email" style="color: tomato; text-align: center"></div>
+            </div>
+    
+            <div class="form-field">
+              <label for="password">Password</label>
+              <input type="password" name="password" />
+              <div class="password" style="color: tomato; text-align: center"></div>
+            </div>
+    
+            <div class="form-field">
+              <button type="submit" class="login-btn">Login</button>
+            </div>
+          </form> -->
+    
     
        
     </section>
@@ -47,6 +68,6 @@
 
 </header>
 
-    <script src="../login.js"></script>
+<script src="../js/login.js"></script>
 </body>
 </html>

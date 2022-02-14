@@ -9,9 +9,17 @@
     <%- include('partials/nav.ejs') %> 
 </header>
 
+<% if (user) { %>
+
+<div>
+    <h2>Hello <span><%= user.fullName %> </span>You are welcome </h2>  
+</div>
+<div class="log">
+    <button><a href="/">logout</a></button>
+   </div>
 
 
-
+<% }  else { %>  
 <div class="log">
     <button><a href="/register">Register</a></button>
     <button><a href="/login">login</a></button>
@@ -19,14 +27,12 @@
     
  </div>
 
-
+<% } %>  %> 
 
 
 <div>
-    <h1>This is the Homepage</h1>
-    <div class="btn">
-        <button><a href="/">View All Product</a></button>  
-     </div>
+    <h1>This is the About Page</h1>
+    
 </div>
     
 

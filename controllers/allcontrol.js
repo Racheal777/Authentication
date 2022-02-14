@@ -3,6 +3,12 @@
 
 const home = (req, res) =>{
     res.render('index', {title :"HomePage"})
+    
+}
+
+const about = (req, res) =>{
+    res.render('about', {title :"About"})
+    
 }
 
 
@@ -19,7 +25,8 @@ const login = (req, res) =>{
 module.exports = {
     home,
     signup,
-    login
+    login,
+    about
 }
 
 
