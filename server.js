@@ -7,7 +7,7 @@ const allRoute = require('./routes/allRoute')
 const registerR = require('./routes/registerRo')
 const cookieParser = require("cookie-parser");
 
-const PORT = process.env.PORT || 7000
+const PORT = process.env.PORT || 8000
 
 //assigning a variable to express
 const app = express()

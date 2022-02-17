@@ -7,6 +7,7 @@ const bcrypt = require("bcrypt");
 // const generateToken = require('../helpers/userHelper')
 const { handleErrors, generateToken } = require("../helpers/userHelper");
 
+const{authUser, getUser, logout} = require('../middleware/authUser')
 
 //signup
 
@@ -91,11 +92,18 @@ const login = async (req, res) =>{
     }
 }
 
-
-
-
-module.exports = {
-    signup,
-     login
-
-}
+const loggingOut = (req, res) =>{
+    //set cookies
+    res.cookie('jwt', 0, {maxAge: 0, httpOnly:true})
+        res.redirect('/')
+    
+      
+                
+  }
+  
+  module.exports = {
+      signup,
+       login,
+       loggingOut
+  
+  }

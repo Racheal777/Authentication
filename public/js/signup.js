@@ -30,7 +30,7 @@ try {
     const data = await response.json();
     console.log(data);
 
-    if (data.user) {
+    if (data.User) {
       location.assign("/");
     }
 

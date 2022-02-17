@@ -2,6 +2,8 @@ const res = require("express/lib/response");
 const jwt = require("jsonwebtoken");
 const register = require('../model/register')
 
+
+
 //protecting the route
 module.exports.authUser = (req, res, next) =>{
     //assigning a variable to the cookie generated
@@ -43,7 +45,7 @@ module.exports.getUser =  (req, res, next)=>{
     if(token){
         jwt.verify(token, process.env.privateKey, async (err, decode) =>{
             if(err){
-                confirm.log(err)
+                console.log(err)
                 res.locals.err = null
                 next()
 
@@ -62,3 +64,5 @@ module.exports.getUser =  (req, res, next)=>{
 
     }
 }
+
+
