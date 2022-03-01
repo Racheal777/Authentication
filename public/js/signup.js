@@ -2,6 +2,7 @@
 const form = document.getElementById('form-input')
 const emailError = document.querySelector('#email-el');
 const passwordError = document.querySelector('#password-el');
+const ConfirmPasswordError = document.querySelector('#Confirmpassword-el');
 
 //adding an event listener
 
@@ -28,11 +29,30 @@ try {
     });
 
     const data = await response.json();
+
+    const passwordd = document.getElementById('password').value
+    const confirm = document.getElementById('confirmPass').value
+    console.log(passwordd, confirm)
+    if(passwordd != confirm){
+      console.log('password do not match')
+      ConfirmPasswordError.textContent = "password do not match"
+      
+    }else{
+      data.User
+      console.log("Password matched")
+
+      if(data.User){
+        location.assign('/')
+      }
+     
+    }
+    
+    
     console.log(data);
 
-    if (data.User) {
-      location.assign("/");
-    }
+    // if (data.User) {
+    //   location.assign("/");
+    // }
 
     if(data.errors) {
       emailError.textContent = data.errors.email;
@@ -44,3 +64,8 @@ try {
     console.log(error)
   }
 })
+
+
+
+
+
