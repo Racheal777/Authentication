@@ -1,0 +1,22 @@
+[
+    {   "id": 4,
+        "name":         "Korobite Beach",
+        "location":     "Kokrobite",
+        "description":  "A beach hotel that has serene environment",
+        "image":        "/images/pic4.jpg"
+    },
+
+    {   "id": 5,
+        "name":         "Laboma Beach",
+        "location":     "Laboma",
+        "description":  "A beach hotel that has serene environment",
+        "image":        "/images/pic.jpg"
+    },
+
+    {   "id": 6,
+        "name":         "Legon botanical garden",
+        "location":     "Legon",
+        "description":  "A garden that has serene environment",
+        "image":        "/images/pic3.jpg"
+    }
+]

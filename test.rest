@@ -1,8 +1,17 @@
-POST http://localhost:7000/login
-Content-Type: application/json
+ GET http://localhost:3000/getJson
 
-{   
+# POST http://localhost:3000/post
+# Content-Type: application/json
+
+# {   
     
-   "email": "wahab@gmail.com",
-   "password": "wahab220"
-}
+#    "author": "Ivy",
+#    "title": "Spotlight yeah",
+#    "body": "Racheal is a political science graduate",
+#    "comments": {
+#             "name": "Suzzy",
+#             "message": "good soul"
+#            }  
+  
+# }
+

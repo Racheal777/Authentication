@@ -3,6 +3,9 @@ const bcrypt = require('bcrypt');
 
 const{Schema} = mongoose
 
+
+
+
 const userSchema = new Schema({
     fullName : {
         type: String,
@@ -20,8 +23,11 @@ const userSchema = new Schema({
         required: [true, "Please enter a password"],
         minlength: [8, "Please the password length should at least be eight"]
     },
+
+    
     
 }, {timestamps: true}, )
+
 
 
 
